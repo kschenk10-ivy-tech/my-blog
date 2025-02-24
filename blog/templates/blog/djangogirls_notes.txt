@@ -73,5 +73,12 @@ Then, in a PythonAnywhere Bash console:
 *** PythonAnywhere command-line
 cd ~/khris.pythonanywhere.com
 git pull
-[...]
-(Remember to substitute <your-pythonanywhere-domain> with your actual PythonAnywhere subdomain, without the angle-brackets.)
+
+
+*** PythonAnywhere command-line
+workon khris.pythonanywhere.com
+python manage.py collectstatic
+
+
+http://127.0.0.1:8000/post/new/
+http://127.0.0.1:8000/admin
