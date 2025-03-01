@@ -1,0 +1,42 @@
+mkdir djangogirls
+cd djangogirls
+python -m venv myvenv
+myvenv\Scripts\
+python -m pip install --upgrade pip
+Make requirements.txt
+pip install -r requirements.txt
+django-admin startproject mysite .
+python manage.py migrate
+
+python manage.py runserver
+http://127.0.0.1:8000/
+
+python manage.py startapp blog
+python manage.py makemigrations blog
+python manage.py migrate blog
+
+
+python manage.py runserver
+http://127.0.0.1:8000/admin/
+
+
+python manage.py createsuperuser
+Username (leave blank to use 'khris'): 
+Email address: khristinschenk@gmail.com
+Password: purp_42-42
+Password (again): purp_42-42
+Superuser created successfully.
+
+
+git init
+
+git config --global user.name "khris"
+
+git config --global khristinschenk@gmail.com
+
+
+git status
+
+git add .
+
+git commit -m "My Django Girls app, first commit"
